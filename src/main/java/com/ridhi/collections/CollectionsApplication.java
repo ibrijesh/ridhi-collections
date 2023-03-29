@@ -2,7 +2,6 @@ package com.ridhi.collections;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 
 public class CollectionsApplication {
@@ -14,6 +13,9 @@ public class CollectionsApplication {
         list.add(1);
         list.add(2);
         list.add(3);
+
+        // use set method
+        list.set(1, 100);
 
         Iterator<Integer> iterator = list.iterator();
 
