@@ -1,5 +1,7 @@
 package com.ridhi.collections;
 
+import java.util.Iterator;
+
 public class CollectionsApplication {
 
     public static void main(String[] args) {
@@ -9,13 +11,18 @@ public class CollectionsApplication {
         list.add(2);
         list.add(3);
 
-        // it's not good way to use .get method , because maybe in future instead of list some other data structure is used and .get method is not applicable, OOP's polymorphism will not be achieved.
 
-        System.out.println(list.getItemAtIndex(3));
+        Iterator<Integer> iterator = list.iterator();
+
+        while (iterator.hasNext())
+            System.out.println(iterator.next());
+
+        System.out.println();
 
 
-        // We have not implemented iterable //
-        for (int x : list)
+        // using one line code //
+
+        for (var x : list)
             System.out.println(x);
 
     }
