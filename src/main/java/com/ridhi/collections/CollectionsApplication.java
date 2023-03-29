@@ -7,15 +7,15 @@ public class CollectionsApplication {
     public static void main(String[] args) {
 
         // FIFO queue
-        Queue<Integer> queue1 = new ArrayDeque<>();
-        queue1.offer(1);
-        queue1.offer(2);
-        queue1.offer(3);
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
 
-
-        System.out.println(queue1.peek());
-        System.out.println(queue1.poll());
-        System.out.println(queue1.peek());
+        while (!stack.isEmpty()) {
+            System.out.println(stack.peek());
+            stack.pop();
+        }
 
 
     }
