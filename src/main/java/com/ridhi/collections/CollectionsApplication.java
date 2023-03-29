@@ -15,16 +15,16 @@ public class CollectionsApplication {
         list.add(3);
 
 
-        List<Integer> list2 = new ArrayList<>(list);
+        List<Integer> list2 = new ArrayList<>();
         list2.add(4);
+        list2.add(5);
+        list2.add(7);
+
+        list2.addAll(list);
 
 
-        Iterator<Integer> iterator = list2.iterator();
-
-        while (iterator.hasNext())
-            System.out.println(iterator.next());
-
-        /*   OR      */
+        System.out.println(list);
+        System.out.println(list2);
 
         for (var x : list2)
             System.out.println(x);
