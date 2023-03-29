@@ -14,17 +14,19 @@ public class CollectionsApplication {
         list.add(2);
         list.add(3);
 
-        // use set method
-        list.set(1, 100);
 
-        Iterator<Integer> iterator = list.iterator();
+        List<Integer> list2 = new ArrayList<>(list);
+        list2.add(4);
+
+
+        Iterator<Integer> iterator = list2.iterator();
 
         while (iterator.hasNext())
             System.out.println(iterator.next());
 
         /*   OR      */
 
-        for (var x : list)
+        for (var x : list2)
             System.out.println(x);
 
     }
