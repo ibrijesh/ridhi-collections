@@ -6,18 +6,16 @@ public class CollectionsApplication {
 
     public static void main(String[] args) {
 
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(3);
-        list.add(2);
+        // FIFO queue
+        Queue<Integer> queue = new LinkedList<>();
 
-        Integer[] arr = list.toArray(new Integer[0]);
+        queue.offer(1);
+        queue.offer(2);
+        queue.offer(3);
 
-        System.out.println(list);
-
-        for (int x : arr)
-            System.out.println(x);
+        System.out.println(queue.peek());
+        System.out.println(queue.poll());
+        System.out.println(queue.peek());
 
     }
 
