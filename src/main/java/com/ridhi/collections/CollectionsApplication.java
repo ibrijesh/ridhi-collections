@@ -6,18 +6,18 @@ public class CollectionsApplication {
 
     public static void main(String[] args) {
 
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        linkedList.add(1);
-        linkedList.add(2);
-        linkedList.add(3);
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(2);
 
+        Integer[] arr = list.toArray(new Integer[0]);
 
-        // [1,2,3]
-        ListIterator<Integer> iterator = linkedList.listIterator();
+        System.out.println(list);
 
-        System.out.println(iterator.next());
-        System.out.println(iterator.next());
-        System.out.println(iterator.previous());
+        for (int x : arr)
+            System.out.println(x);
 
     }
 
