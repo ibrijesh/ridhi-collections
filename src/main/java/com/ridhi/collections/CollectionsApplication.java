@@ -6,16 +6,17 @@ public class CollectionsApplication {
 
     public static void main(String[] args) {
 
-        // Priority Queue   - sort according to min math marks
-        PriorityQueue<Integer> pq = new PriorityQueue<>(new MyCustomComparator());
+        // Set
+        Set<Integer> set = new HashSet<>();
+        set.add(1);
+        set.add(2);
+        set.add(3);
+        set.add(1);
 
-        pq.offer(1);
-        pq.offer(2);
-        pq.offer(3);
+        System.out.println(set);
 
-
-        while (!pq.isEmpty())
-            System.out.println(pq.poll());
+        set.remove(2);
+        System.out.println(set);
 
     }
 
