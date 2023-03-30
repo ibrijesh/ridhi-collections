@@ -6,16 +6,14 @@ public class CollectionsApplication {
 
     public static void main(String[] args) {
 
-        // Deque
-        Deque<Integer> deque = new ArrayDeque<>();
-        deque.offerFirst(1);
-        deque.offerFirst(2);
+        // Priority Queue
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        pq.offer(1);
+        pq.offer(2);
+        pq.offer(3);
 
-        System.out.println(deque);
-
-        deque.pollFirst();
-        System.out.println(deque.peekFirst());
-        System.out.println(deque);
+        while (!pq.isEmpty())
+            System.out.println(pq.poll());
 
 
     }
