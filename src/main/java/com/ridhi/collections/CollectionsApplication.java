@@ -6,16 +6,14 @@ public class CollectionsApplication {
 
     public static void main(String[] args) {
 
-        // Set
-        NavigableSet<Integer> treeSet = new TreeSet<>();
-        treeSet.add(2);
-        treeSet.add(8);
-        treeSet.add(4);
-        treeSet.add(9);
-        treeSet.add(5);
+        // Map
+        Map<String, Integer> map = new HashMap<>();
+        map.put("shivam", 1);
+        map.put("brijesh", 2);
+        map.put("rahul", 3);
 
-        System.out.println(treeSet);
-        System.out.println(treeSet.lower(4));
+
+        System.out.println(map);
 
     }
 
