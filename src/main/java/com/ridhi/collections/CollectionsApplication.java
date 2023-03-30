@@ -7,7 +7,7 @@ public class CollectionsApplication {
     public static void main(String[] args) {
 
         // Set
-        NavigableSet<Integer> treeSet = new TreeSet<>((a, b) -> b - a);
+        NavigableSet<Integer> treeSet = new TreeSet<>();
         treeSet.add(2);
         treeSet.add(8);
         treeSet.add(4);
@@ -15,7 +15,7 @@ public class CollectionsApplication {
         treeSet.add(5);
 
         System.out.println(treeSet);
-
+        System.out.println(treeSet.floor(6));
 
     }
 
