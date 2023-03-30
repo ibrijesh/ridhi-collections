@@ -14,12 +14,11 @@ public class CollectionsApplication {
         stMArks.add(new StudentMarks(23, 34));
 
         // Set
-        Set<StudentMarks> set = new HashSet<>(stMArks);
+        Set<StudentMarks> treeSet = new TreeSet<>(stMArks);
 
 
-        // given wrong result,
-        System.out.println(set.contains(new StudentMarks(40, 70)));
-
+        for (StudentMarks st : treeSet)
+            System.out.println(st);
 
     }
 
