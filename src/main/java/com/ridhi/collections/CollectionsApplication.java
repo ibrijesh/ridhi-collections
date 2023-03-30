@@ -6,23 +6,19 @@ public class CollectionsApplication {
 
     public static void main(String[] args) {
 
+        List<StudentMarks> stMArks = new ArrayList<>();
+        stMArks.add(new StudentMarks(100, 50));
+        stMArks.add(new StudentMarks(40, 70));
+        stMArks.add(new StudentMarks(66, 88));
+        stMArks.add(new StudentMarks(160, 99));
+        stMArks.add(new StudentMarks(23, 34));
+
         // Set
-        Set<Integer> set = new LinkedHashSet<>();
-        set.add(3);
-        set.add(1);
-        set.add(2);
-        set.add(1);
-        set.add(7);
+        Set<StudentMarks> set = new HashSet<>(stMArks);
 
 
-        Set<Integer> set2 = new HashSet<>();
-        set2.add(4);
-        set2.add(3);
-        set2.add(5);
-        set2.add(2);
-
-        System.out.println(set);
-        System.out.println(set2);
+        // given wrong result,
+        System.out.println(set.contains(new StudentMarks(40, 70)));
 
 
     }
