@@ -12,6 +12,8 @@ public class CollectionsApplication {
         map.put("brijesh", 2);
         map.put("rahul", 3);
 
+        map.remove("brijesh");
+
 
         System.out.println(map);
 
