@@ -24,18 +24,17 @@ public class CollectionsApplication {
         graph.computeIfAbsent(1, f -> new ArrayList<>()).add(3);
 
 
-        // For Traversing graph, we need to convert Map to Set as Map cannot be traversed//
+        /* second way to traverse */
+        Set<Integer> keySets = graph.keySet();
 
-        Set<Map.Entry<Integer, List<Integer>>> entrySet = graph.entrySet();
+        for (Integer key : keySets) {
+            System.out.print(key + "-->");
 
-        for (Map.Entry<Integer, List<Integer>> entry : entrySet) {
-
-            System.out.print(entry.getKey() + "-->");
-
-            for (Integer edge : entry.getValue())
+            for (Integer edge : graph.get(key))
                 System.out.print(edge + " ");
             System.out.println();
         }
+
 
 
     }
