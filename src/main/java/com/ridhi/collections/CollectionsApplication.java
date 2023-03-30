@@ -15,7 +15,7 @@ public class CollectionsApplication {
         treeSet.add(5);
 
         System.out.println(treeSet);
-        System.out.println(treeSet.higher(4));
+        System.out.println(treeSet.lower(4));
 
     }
 
