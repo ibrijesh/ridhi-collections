@@ -6,16 +6,16 @@ public class CollectionsApplication {
 
     public static void main(String[] args) {
 
-        // FIFO queue
-        Stack<Integer> stack = new Stack<>();
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
+        // Deque
+        Deque<Integer> deque = new ArrayDeque<>();
+        deque.offerFirst(1);
+        deque.offerFirst(2);
 
-        while (!stack.isEmpty()) {
-            System.out.println(stack.peek());
-            stack.pop();
-        }
+        System.out.println(deque);
+
+        deque.pollFirst();
+        System.out.println(deque.peekFirst());
+        System.out.println(deque);
 
 
     }
