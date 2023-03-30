@@ -13,10 +13,19 @@ public class CollectionsApplication {
         set.add(3);
         set.add(1);
 
-        System.out.println(set);
 
-        set.remove(2);
+        Set<Integer> set2 = new HashSet<>();
+        set2.add(4);
+        set2.add(3);
+        set2.add(5);
+
         System.out.println(set);
+        System.out.println(set2);
+
+        set.retainAll(set2);
+        System.out.println("After retainAll()");
+        System.out.println(set);
+        System.out.println(set2);
 
     }
 
