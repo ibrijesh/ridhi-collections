@@ -22,8 +22,8 @@ public class CollectionsApplication {
         System.out.println(set);
         System.out.println(set2);
 
-        set.retainAll(set2);
-        System.out.println("After retainAll()");
+        set.removeAll(set2);
+        System.out.println("After removeAll()");
         System.out.println(set);
         System.out.println(set2);
 
