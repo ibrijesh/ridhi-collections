@@ -6,19 +6,16 @@ public class CollectionsApplication {
 
     public static void main(String[] args) {
 
-        List<StudentMarks> stMArks = new ArrayList<>();
-        stMArks.add(new StudentMarks(100, 50));
-        stMArks.add(new StudentMarks(40, 70));
-        stMArks.add(new StudentMarks(66, 88));
-        stMArks.add(new StudentMarks(160, 99));
-        stMArks.add(new StudentMarks(23, 34));
-
         // Set
-        Set<StudentMarks> treeSet = new TreeSet<>(stMArks);
+        NavigableSet<Integer> treeSet = new TreeSet<>((a, b) -> b - a);
+        treeSet.add(2);
+        treeSet.add(8);
+        treeSet.add(4);
+        treeSet.add(9);
+        treeSet.add(5);
 
+        System.out.println(treeSet);
 
-        for (StudentMarks st : treeSet)
-            System.out.println(st);
 
     }
 
