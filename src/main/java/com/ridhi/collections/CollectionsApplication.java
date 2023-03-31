@@ -12,6 +12,9 @@ public class CollectionsApplication {
         treeMap.put(3, "shivam");
         treeMap.put(2, "rahul");
 
+        //remove
+        treeMap.remove(2);
+
         System.out.println(treeMap);
 
     }
