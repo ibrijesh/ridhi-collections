@@ -12,7 +12,7 @@ public class CollectionsApplication {
         List<Integer> list = Arrays.asList(arr);
 
         // sort in natural ordering
-        Collections.sort(list, Collections.reverseOrder());
+        list.sort(Collections.reverseOrder());
 
         System.out.println(list);
 
