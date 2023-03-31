@@ -6,19 +6,11 @@ public class CollectionsApplication {
 
     public static void main(String[] args) {
 
-        // TreeMap
-        NavigableMap<Integer, String> treeMap = new TreeMap<>();
-        treeMap.put(1, "brijesh");
-        treeMap.put(3, "shivam");
-        treeMap.put(2, "rahul");
+        Integer arr[] = new Integer[]{1, 3, 4, 2, 6, 8, 7};
+        Arrays.sort(arr);
 
-
-        // traverse using keySets
-        Set<Integer> keySets = treeMap.keySet();
-
-        for (Integer key : keySets)
-            System.out.println(key + " " + treeMap.get(key));
-
+        for(Integer x:arr)
+            System.out.println(x);
     }
 
 }
