@@ -13,12 +13,11 @@ public class CollectionsApplication {
         treeMap.put(2, "rahul");
 
 
-        // traverse using entrySet
+        // traverse using keySets
+        Set<Integer> keySets = treeMap.keySet();
 
-        Set<Map.Entry<Integer, String>> entrySet = treeMap.entrySet();
-
-        for (Map.Entry<Integer, String> entry : entrySet)
-            System.out.println(entry.getKey() + " " + entry.getValue());
+        for (Integer key : keySets)
+            System.out.println(key + " " + treeMap.get(key));
 
     }
 
