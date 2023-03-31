@@ -12,10 +12,13 @@ public class CollectionsApplication {
         treeMap.put(3, "shivam");
         treeMap.put(2, "rahul");
 
-        //remove
-        treeMap.remove(2);
 
-        System.out.println(treeMap);
+        // traverse using entrySet
+
+        Set<Map.Entry<Integer, String>> entrySet = treeMap.entrySet();
+
+        for (Map.Entry<Integer, String> entry : entrySet)
+            System.out.println(entry.getKey() + " " + entry.getValue());
 
     }
 
