@@ -11,6 +11,9 @@ public class CollectionsApplication {
         // convert Array to List //
         List<Integer> list = Arrays.asList(arr);
 
+        // sort in natural ordering
+        Collections.sort(list);
+
         System.out.println(list);
 
     }
